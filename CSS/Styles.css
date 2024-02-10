@@ -134,3 +134,12 @@ h2 {
 .hero-2 .content h2:first-of-type {
     margin-bottom: 0;
 }
+
+@media screen and (min-width: 735px) {
+    .hero-2 {
+        background: url(../Images/iphones\ desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
