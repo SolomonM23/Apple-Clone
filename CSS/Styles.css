@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-primary);
     margin-top: 0;
 }
@@ -99,7 +99,7 @@ h2 {
     }
 }
 
-/* home container section */
+/* hero-1 container */
 .hero-1 {
     background: url(../Images/hero\ mobile.jpg);
     background-size: contain;
@@ -116,4 +116,21 @@ h2 {
         background-position: center;
         background-color: var(--color-background);
     }
+}
+
+/* hero-2 container */
+.hero-2 {
+    background: url(../Images/iphones\ mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background);
+}
+
+.hero-2 h1, .hero-2 h2 {
+    color: var(--color-heading);
+}
+
+.hero-2 .content h2:first-of-type {
+    margin-bottom: 0;
 }
