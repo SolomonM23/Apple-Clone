@@ -100,7 +100,7 @@ h2 {
 }
 
 /* home container section */
-.home {
+.hero-1 {
     background: url(../Images/hero\ mobile.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ h2 {
 }
 
 @media screen and (min-width: 735px){
-    .home {
+    .hero-1 {
         background: url(../Images/hero\ desktop.jpg);
         background-size: contain;
         background-repeat: no-repeat;
