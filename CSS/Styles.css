@@ -13,10 +13,10 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
+    text-align: center;
 }
 
 html {
@@ -25,7 +25,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* hero section */
+body {
+    margin: 0;
+}
+
+/* large container sections */
 .container {
     min-height: 70vh;
     display: flex;
@@ -33,7 +37,7 @@ html {
     justify-content: center;
 }
 
-.container.home {
+.home {
     background: url(../Images/hero\ desktop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,26 +45,36 @@ html {
 
 h1 {
     font-size: 4.5rem;
-    font-weight: bold;
+    font-weight: 400;
     color: var(--color-primary);
+    margin: 0;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
     color: var(--color-primary);
+    margin-top: 0;
 }
 
-.container.home a {
+.content {
+    margin-top: 5rem; 
+}
+
+.links a {
     color: var(--color-links);
     font-size: 1.6rem;
     background: none;
-    margin: 1.5rem;
 }
 
-.container.home a::after {
+.links a::after {
     content: " >";
 }
 
-.container.home a:hover {
+.links a:hover {
     text-decoration: underline;
+}
+
+.content .links a:nth-child(2) {
+    margin-left: 2rem;
 }
