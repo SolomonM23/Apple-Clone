@@ -5,9 +5,11 @@
     --color-secondary: #434344;
     --color-accent: #fff;
     --color-heading: #1d1d1f;
+    --color-background: #000;
     --color-list: #424245;
     --color-footer: #6e6e73;
     --color-links: #0066cc;
+    --nav-height: 48px;
 }
 
 * {
@@ -31,16 +33,11 @@ body {
 
 /* large container sections */
 .container {
-    min-height: 70vh;
+    width: 100vw;
+    height: 60rem;
     display: flex;
     align-items: start;
     justify-content: center;
-}
-
-.home {
-    background: url(../Images/hero\ desktop.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 h1 {
@@ -77,4 +74,46 @@ h2 {
 
 .content .links a:nth-child(2) {
     margin-left: 2rem;
+}
+
+@media screen and (min-width: 735px){
+    .container {
+        height: 38rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .content {
+        margin-top: 3rem; 
+    }
+
+    .links a {
+        font-size: 1.2rem;
+    }
+}
+
+/* home container section */
+.home {
+    background: url(../Images/hero\ mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background);
+}
+
+@media screen and (min-width: 735px){
+    .home {
+        background: url(../Images/hero\ desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--color-background);
+    }
 }
