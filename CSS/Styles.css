@@ -144,3 +144,30 @@ h2 {
         background-color: #fafafa;
     }
 }
+
+/* hero-3 container */
+.hero-3 {
+    background: url(../Images/watch\ mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background);
+}
+
+.hero-3 .content img {
+    scale: .6;
+}
+
+@media screen and (min-width: 735px) {
+    .hero-3 {
+        background: url(../Images/wathc\ desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--color-background);
+    }
+
+    .hero-3 .content img {
+        scale: .5;
+    }
+}
