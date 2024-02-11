@@ -31,6 +31,14 @@ body {
     margin: 0;
 }
 
+/* heros container for 3 hero sections */
+.heros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 /* large container sections */
 .container {
     width: 100vw;
