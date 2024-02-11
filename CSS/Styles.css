@@ -38,7 +38,6 @@ body {
     gap: 1rem;
 }
 
-
 /* large container sections */
 .container {
     width: 100vw;
@@ -189,4 +188,31 @@ h2 {
     .hero-3 .content h2 {
         margin-bottom: 2rem;
     }
+}
+
+/* small container grid section */
+.grid {
+    display: grid;
+    margin-top: 1rem;
+}
+
+.container-small {
+    width: 100vw;
+    height: 60rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+/* grid space-1 */
+.space-1 {
+    background: url(../Images/wwdc\ mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--color-background);
+}
+
+.space-1 .content {
+    margin-top: 35rem;
 }
