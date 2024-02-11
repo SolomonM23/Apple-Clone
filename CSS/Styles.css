@@ -124,7 +124,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--color-background);
+    background-color: #fafafa;
 }
 
 .hero-2 h1, .hero-2 h2 {
@@ -141,5 +141,6 @@ h2 {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: #fafafa;
     }
 }
