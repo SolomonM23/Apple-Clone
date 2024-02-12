@@ -8,7 +8,7 @@
     --color-background: #000;
     --color-list: #424245;
     --color-footer: #6e6e73;
-    --color-links: #0066cc;
+    --color-links: #2897FF;
     --nav-height: 48px;
 }
 
@@ -67,7 +67,7 @@ h2 {
 
 .links a {
     color: var(--color-links);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     background: none;
 }
 
@@ -215,4 +215,12 @@ h2 {
 
 .space-1 .content {
     margin-top: 35rem;
+}
+
+.space-1 .content > h2 {
+    margin-bottom: 0;
+}
+
+.space-1 .content .last {
+    margin-bottom: 1.6rem;
 }
