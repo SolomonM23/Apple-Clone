@@ -250,3 +250,20 @@ h2 {
     background-position: center;
     background-color: var(--color-background);
 }
+
+.space-3 .content > h2 {
+    margin-bottom: 0;
+}
+
+.space-3 .content .last {
+    margin-bottom: 1.6rem;
+}
+
+/* grid space-4 */
+.space-4 {
+    background: url(../Images/Homepod\ desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: var(--color-background);
+}
