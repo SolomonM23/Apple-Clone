@@ -287,3 +287,24 @@ a:hover {
 .space-5 a {
     color: var(--color-primary);
 }
+
+/* grid space-6 */
+.space-6 {
+    background: url(../Images/card\ mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--div-bg-white);
+}
+
+.space-6 h1, .space-6 h2 {
+    color: var(--color-heading);
+}
+
+.space-6 .content > h2 {
+    margin-bottom: 0;
+}
+
+.space-6 .content .last {
+    margin-bottom: 1.6rem;
+}
