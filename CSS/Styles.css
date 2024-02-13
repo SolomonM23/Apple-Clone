@@ -10,6 +10,7 @@
     --color-footer: #6e6e73;
     --color-links: #2897FF;
     --nav-height: 48px;
+    --div-bg-white: #fafafa;
 }
 
 * {
@@ -84,9 +85,6 @@ h2 {
 }
 
 @media screen and (min-width: 735px){
-    .container {
-        height: 60rem;
-    }
 
     h1 {
         font-size: 5rem;
@@ -132,7 +130,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #fafafa;
+    background-color: var(--div-bg-white);
 }
 
 .hero-2 h1, .hero-2 h2 {
@@ -193,15 +191,21 @@ h2 {
 /* small container grid section */
 .grid {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     margin-top: 1rem;
+    gap: 1rem;
 }
 
-.container-small {
-    width: 100vw;
-    height: 60rem;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+.grid .container {
+    width: auto;
+}
+
+@media screen and (min-width: 735px) {
+    .grid {
+        grid-template: repeat(3, 60rem) / 1fr 1fr;
+        margin: 1rem;
+    }
 }
 
 /* grid space-1 */
@@ -223,4 +227,17 @@ h2 {
 
 .space-1 .content .last {
     margin-bottom: 1.6rem;
+}
+
+/* grid space-2 */
+.space-2 {
+    background: url(../Images/ipad\ mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--div-bg-white);
+}
+
+.space-2 h1, .space-2 h2 {
+    color: var(--color-heading);
 }
