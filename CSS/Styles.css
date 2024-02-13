@@ -169,14 +169,14 @@ a:hover {
     scale: .6;
 }
 
+/* tablet screen */
 @media screen and (min-width: 735px) {
     .hero-3 {
         background: url(../Images/wathc\ desktop.jpg);
         background-size: cover;
-        background-attachment: scroll;
+        /* background-attachment: scroll; */
         background-repeat: no-repeat;
-        background-position: center center;
-        background-color: var(--color-background);
+        background-position: center bottom;
     }
 
     .hero-3 .content img {
@@ -185,6 +185,15 @@ a:hover {
 
     .hero-3 .content h2 {
         margin-bottom: 2rem;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width: 1180px){
+    .hero-3, .hero-2, .hero-1 {
+        background-size: 1500px 700px; /* Set a fixed width and height for the background image */
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
