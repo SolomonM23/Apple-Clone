@@ -241,3 +241,12 @@ h2 {
 .space-2 h1, .space-2 h2 {
     color: var(--color-heading);
 }
+
+/* grid space-3 */
+.space-3 {
+    background: url(../Images/mackbook\ desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background);
+}
