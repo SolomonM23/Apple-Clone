@@ -66,21 +66,21 @@ h2 {
     margin-top: 5rem; 
 }
 
-.links a {
+a {
     color: var(--color-links);
     font-size: 1.8rem;
     background: none;
 }
 
-.links a::after {
+a::after {
     content: " >";
 }
 
-.links a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.content .links a:nth-child(2) {
+.content a:nth-child(2) {
     margin-left: 2rem;
 }
 
@@ -99,7 +99,7 @@ h2 {
         margin-top: 3rem; 
     }
 
-    .links a {
+    a {
         font-size: 2rem;
     }
 }
@@ -266,4 +266,24 @@ h2 {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-color: var(--color-background);
+}
+
+/* grid space-5 */
+.space-5 {
+    background: url(../Images/Music\ mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.space-5 .content > h2 {
+    margin-bottom: 0;
+}
+
+.space-5 .content .last {
+    margin-bottom: 1.6rem;
+}
+
+.space-5 a {
+    color: var(--color-primary);
 }
