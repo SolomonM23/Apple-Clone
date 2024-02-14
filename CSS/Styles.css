@@ -217,7 +217,7 @@ a:hover {
     }
 }
 
-/* grid space-1 */
+/* grid space-1 WWDC23 & AirPods Pro on big screens */
 .space-1 {
     background: url(../Images/wwdc\ mobile.jpg);
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ a:hover {
     margin-bottom: 1.6rem;
 }
 
-/* grid space-2 */
+/* grid space-2 Ipad*/
 .space-2 {
     background: url(../Images/ipad\ mobile.jpg);
     background-size: contain;
@@ -251,14 +251,7 @@ a:hover {
     color: var(--color-heading);
 }
 
-@media screen and (min-width: 735px) {
-    .space-2 {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-    }
-}
-
-/* grid space-3 */
+/* grid space-3 Macbook Pro*/
 .space-3 {
     background: url(../Images/mackbook\ desktop.jpg);
     background-size: contain;
@@ -275,7 +268,7 @@ a:hover {
     margin-bottom: 1.6rem;
 }
 
-/* grid space-4 */
+/* grid space-4 HomePod*/
 .space-4 {
     background: url(../Images/Homepod\ desktop.jpg);
     background-size: 700px 600px;
@@ -284,7 +277,7 @@ a:hover {
     background-color: var(--color-background);
 }
 
-/* grid space-5 */
+/* grid space-5 Music Classical & Fitness on big screens*/
 .space-5 {
     background: url(../Images/Music\ mobile.jpg);
     background-size: 734px 834px;
@@ -304,7 +297,7 @@ a:hover {
     color: var(--color-primary);
 }
 
-/* grid space-6 */
+/* grid space-6 Apple Card*/
 .space-6 {
     background: url(../Images/card\ mobile.jpg);
     background-size: 500px;
@@ -323,4 +316,47 @@ a:hover {
 
 .space-6 .content .last {
     margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 735px) {
+    .space-1 {
+        background: url(../Images/Airpods\ desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .space-1 .content {
+        margin-top: 5rem;
+    }
+    
+    .space-2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .space-3 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .space-4 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .space-5 {
+        background: url(../Images/Fitness\ desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .space-5 .content h1, .space-5 .content h2 {
+        color: var(--color-background);
+    }
+
+    .space-5 a {
+        color: var(--color-links);
+    }
 }
