@@ -208,6 +208,7 @@ a:hover {
 
 .grid .container {
     width: auto;
+    /* background-size: contain 600px; */
 }
 
 @media screen and (min-width: 735px) {
@@ -251,6 +252,10 @@ a:hover {
     color: var(--color-heading);
 }
 
+@media screen and (min-width: 735px) {
+
+}
+
 /* grid space-3 */
 .space-3 {
     background: url(../Images/mackbook\ desktop.jpg);
@@ -271,7 +276,7 @@ a:hover {
 /* grid space-4 */
 .space-4 {
     background: url(../Images/Homepod\ desktop.jpg);
-    background-size: contain;
+    background-size: 700px 600px;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-color: var(--color-background);
@@ -280,9 +285,9 @@ a:hover {
 /* grid space-5 */
 .space-5 {
     background: url(../Images/Music\ mobile.jpg);
-    background-size: cover;
+    background-size: 734px 834px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 55%;
 }
 
 .space-5 .content > h2 {
@@ -300,7 +305,7 @@ a:hover {
 /* grid space-6 */
 .space-6 {
     background: url(../Images/card\ mobile.jpg);
-    background-size: cover;
+    background-size: 500px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--div-bg-white);
