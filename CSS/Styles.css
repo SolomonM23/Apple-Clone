@@ -197,6 +197,15 @@ a:hover {
     }
 }
 
+/* screen size change content visibility */
+.mobile-content {
+  display: block; /* Display on all screens */
+}
+
+.desktop-content {
+  display: none; /* Hide on all screens */
+}
+
 /* small container grid section */
 .grid {
     display: grid;
@@ -359,4 +368,12 @@ a:hover {
     .space-5 a {
         color: var(--color-links);
     }
+
+    .mobile-content {
+        display: none; /* Hide on larger screens */
+      }
+
+      .desktop-content {
+        display: block; /* Display on larger screens */
+      }
 }
