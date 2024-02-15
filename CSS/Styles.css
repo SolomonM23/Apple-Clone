@@ -32,6 +32,24 @@ body {
     margin: 0;
 }
 
+/* navbar */
+.navbar {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    width: 100vw;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: green;
+}
+
+.nav-right-icons {
+    background-color: red;
+}
 /* heros container for 3 hero sections */
 .heros {
     display: flex;
