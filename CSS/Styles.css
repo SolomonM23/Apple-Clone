@@ -32,7 +32,7 @@ body {
     margin: 0;
 }
 
-/* navbar */
+/* Header navbar */
 .navbar {
     background-color: var(--color-background);
     color: var(--color-primary);
@@ -58,6 +58,14 @@ body {
 
 .nav-right-icons .fa-bars {
     color: var(--color-footer);
+}
+
+.mobile-menu-list {
+    position: absolute;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    width: 100vw;
+    height: 100vh;
 }
 
 /* heros container for 3 hero sections */
