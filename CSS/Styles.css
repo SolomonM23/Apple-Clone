@@ -41,14 +41,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .logo {
-    background-color: green;
+    font-size: 25px;
 }
 
 .nav-right-icons {
-    background-color: red;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 /* heros container for 3 hero sections */
 .heros {
