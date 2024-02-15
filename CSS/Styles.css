@@ -34,8 +34,9 @@ body {
 
 /* navbar */
 .navbar {
-    background-color: var(--color-secondary);
+    background-color: var(--color-background);
     color: var(--color-primary);
+    opacity: 0.7;
     width: 100vw;
     height: 48px;
     display: flex;
@@ -45,15 +46,20 @@ body {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .nav-right-icons {
-    font-size: 20px;
-    width: 150px;
+    font-size: 18px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
 }
+
+.nav-right-icons .fa-bars {
+    color: var(--color-footer);
+}
+
 /* heros container for 3 hero sections */
 .heros {
     display: flex;
