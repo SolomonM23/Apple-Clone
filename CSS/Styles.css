@@ -19,7 +19,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-align: center;
+    text-align: center;    
 }
 
 html {
@@ -71,8 +71,19 @@ body {
 }
 
 .mobile-menu-list .list-link {
-    padding: 0 1rem 1rem 4.5rem;
+    padding: 0 2rem 1rem 4.5rem;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-list .list-link span {
+    display: none;
+    font-size: 2rem;
+}
+
+.mobile-menu-list .list-link:hover span {
+    display: inline-block;
 }
 /* heros container for 3 hero sections */
 .heros {
