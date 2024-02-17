@@ -66,8 +66,14 @@ body {
     color: var(--color-primary);
     width: 100vw;
     height: 100vh;
+    font-size: 3rem;
+    padding-top: 5rem;
 }
 
+.mobile-menu-list .list-link {
+    padding: 0 1rem 1rem 4.5rem;
+    text-align: left;
+}
 /* heros container for 3 hero sections */
 .heros {
     display: flex;
