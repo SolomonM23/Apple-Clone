@@ -66,24 +66,26 @@ body {
     color: var(--color-primary);
     width: 100vw;
     height: 100vh;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
     padding-top: 5rem;
 }
 
 .mobile-menu-list .list-link {
-    padding: 0 2rem 1rem 4.5rem;
+    padding: 0 2rem 2rem 4.5rem;
     text-align: left;
     display: flex;
     justify-content: space-between;
 }
 
 .mobile-menu-list .list-link span {
-    display: none;
     font-size: 2rem;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
 .mobile-menu-list .list-link:hover span {
-    display: inline-block;
+    opacity: .7;
 }
 /* heros container for 3 hero sections */
 .heros {
