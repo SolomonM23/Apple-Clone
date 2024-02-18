@@ -33,14 +33,6 @@ body {
     margin: 0;
 }
 
-.visible {
-    display: block;
-}
-  
-.hidden {
-    display: none;
-}
-
 /* Header navbar */
 .header {
     position: relative;
@@ -78,15 +70,27 @@ body {
     color: var(--color-footer);
 }
 
+/* visibility for the sidebar div */
+.visible {
+    transform: translateY(0);
+}
+  
+.hidden {
+    transform: translateY(-100%);
+}
+
 .sidebar-menu {
     background-color: var(--color-background);
     color: var(--color-primary);
     font-size: 2.5rem;
     font-weight: 500;
     height: 100vh;
+    width: 100vw;
     padding-top: 6rem;
     position: absolute;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
 }
 
 .sidebar-menu li {
