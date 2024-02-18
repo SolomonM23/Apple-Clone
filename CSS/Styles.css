@@ -33,6 +33,14 @@ body {
     margin: 0;
 }
 
+.visible {
+    display: block;
+}
+  
+.hidden {
+    display: none;
+}
+
 /* Header navbar */
 .header {
     position: relative;
