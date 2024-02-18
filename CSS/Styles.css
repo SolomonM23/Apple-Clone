@@ -40,18 +40,20 @@ body {
 
 .navbar {
     align-items: center;
-    background-color: var(--color-background);
+    background-color: rgba(0, 0, 0, 0.5);
     color: var(--color-primary);
     display: flex;
     height: 48px;
     justify-content: space-between;
     left: 0;
-    opacity: 0.7;
     padding: 20px;
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 1000;
+}
+.navbar .logo, .navbar .nav-icons {
+    opacity: 1;
 }
 
 .logo {
