@@ -19,6 +19,8 @@
     outline: none; border: none;
     text-align: center;    
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -61,13 +63,14 @@ body {
     width: 100px;
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 .nav-right-icons .fa-bars {
     color: var(--color-footer);
 }
 
-.mobile-menu-list {
+.sidebar-menu {
     background-color: var(--color-background);
     color: var(--color-primary);
     font-size: 2.5rem;
@@ -78,20 +81,20 @@ body {
     width: 100vw;
 }
 
-.mobile-menu-list .list-link {
+.sidebar-menu li {
     padding: 0 2rem 2rem 4.5rem;
     text-align: left;
     display: flex;
     justify-content: space-between;
 }
 
-.mobile-menu-list .list-link span {
+.sidebar-menu li span {
     font-size: 2rem;
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
 
-.mobile-menu-list .list-link:hover span {
+.sidebar-menu li:hover span {
     opacity: .7;
 }
 /* heros container for 3 hero sections */
