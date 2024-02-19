@@ -69,12 +69,12 @@ body {
     list-style: none;
 }
 
-.nav-icons li:hover {
-    color: var(--color-accent);
+.nav-icons li, .logo i {
+    color: #d4d4d4;
 }
 
-.nav-icons .fa-bars {
-    color: var(--color-footer);
+.nav-icons li:hover, .logo i:hover {
+    color: var(--color-accent);
 }
 
 /* visibility for the sidebar div */
