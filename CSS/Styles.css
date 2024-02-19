@@ -33,6 +33,9 @@ body {
     margin: 0;
 }
 
+li {
+    cursor: pointer;
+}
 /* Header navbar */
 .header {
     position: relative;
@@ -88,7 +91,7 @@ body {
 
 .sidebar-menu {
     background-color: var(--color-background);
-    color: var(--color-primary);
+    color: #d4d4d4;
     font-size: 2.5rem;
     font-weight: 500;
     height: 100vh;
@@ -105,6 +108,10 @@ body {
     text-align: left;
     display: flex;
     justify-content: space-between;
+}
+
+.sidebar-menu li:hover {
+    color: var(--color-accent);
 }
 
 .sidebar-menu li span {
