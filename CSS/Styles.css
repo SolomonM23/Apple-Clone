@@ -97,7 +97,7 @@ li {
     height: 100vh;
     width: 100vw;
     padding-top: 6rem;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     transition: transform 0.5s ease-in-out;
@@ -122,6 +122,13 @@ li {
 
 .sidebar-menu li:hover span {
     opacity: .7;
+}
+
+.sidebar-menu .exit {
+    font-size: 18px;
+    position: absolute;
+    top: 24px;
+    right: 20px;
 }
 /* heros container for 3 hero sections */
 .heros {
