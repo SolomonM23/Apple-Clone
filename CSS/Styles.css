@@ -35,6 +35,7 @@ body {
 
 li {
     cursor: pointer;
+    list-style: none;
 }
 /* Header navbar */
 .header {
@@ -48,7 +49,7 @@ li {
     color: var(--color-primary);
     display: flex;
     height: 48px;
-    justify-content: space-between;
+    justify-content: center;
     left: 0;
     padding: 20px;
     position: fixed;
@@ -86,6 +87,27 @@ li {
 
 .nav-visible {
     opacity: 1;
+}
+
+@media screen and (min-width: 834px) {
+    .navbar {
+        height: 44px;
+    }
+    
+    /* #menu-btn {
+        display: none;
+    } */
+
+    .nav-icons {
+
+    }
+    .navbar .desktop-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 50rem;
+        justify-content: space-between;
+
+    }
 }
 /* visibility for the sidebar div */
 .visible {
