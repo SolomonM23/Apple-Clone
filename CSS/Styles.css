@@ -80,6 +80,13 @@ li {
     color: var(--color-accent);
 }
 
+.nav-hidden {
+    opacity: 0;
+}
+
+.nav-visible {
+    opacity: 1;
+}
 /* visibility for the sidebar div */
 .visible {
     transform: translateY(0);
