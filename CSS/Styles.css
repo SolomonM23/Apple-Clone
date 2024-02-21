@@ -49,7 +49,7 @@ li {
     color: var(--color-primary);
     display: flex;
     height: 48px;
-    justify-content: center;
+    justify-content: space-between;
     left: 0;
     padding: 20px;
     position: fixed;
@@ -70,7 +70,6 @@ li {
     width: 100px;
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
 
 .nav-icons li, .logo i {
@@ -79,6 +78,10 @@ li {
 
 .nav-icons li:hover, .logo i:hover {
     color: var(--color-accent);
+}
+
+.navbar .desktop-menu {
+    display: none;
 }
 
 .nav-hidden {
@@ -98,15 +101,18 @@ li {
         display: none;
     } */
 
-    .nav-icons {
+    /* .nav-icons {
 
-    }
+    } */
     .navbar .desktop-menu {
         display: flex;
-        flex-wrap: nowrap;
-        width: 50rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        font-size: 1.2rem;
+    }
 
+    .sidebar-menu {
+        display: none;
     }
 }
 /* visibility for the sidebar div */
