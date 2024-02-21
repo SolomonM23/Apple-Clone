@@ -95,20 +95,29 @@ li {
 @media screen and (min-width: 834px) {
     .navbar {
         height: 44px;
+        justify-content: center;
     }
     
-    /* #menu-btn {
+    #menu-btn {
         display: none;
-    } */
+    }
 
-    /* .nav-icons {
+    .logo {
+        font-size: 1.8rem;
+    }
+    .nav-icons {
+        justify-content: space-between;
+        font-size: 1.5rem;
+        width: 60px;
+    }
 
-    } */
     .navbar .desktop-menu {
         display: flex;
         justify-content: space-evenly;
-        flex-grow: 1;
+        flex-grow: 3;
         font-size: 1.2rem;
+        font-weight: 300;
+        max-width: 900px;
     }
 
     .sidebar-menu {
