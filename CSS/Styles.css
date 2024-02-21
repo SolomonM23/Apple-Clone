@@ -124,7 +124,7 @@ li {
     .navbar .desktop-menu li {
         color: var(--color-menu);
     }
-    
+
     .navbar .desktop-menu li:hover {
         color: var(--color-primary);
     }
@@ -136,14 +136,15 @@ li {
 /* visibility for the sidebar div */
 .visible {
     transform: translateY(0);
+    background-color: var(--color-background);
 }
   
 .hidden {
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% + 48px));
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .sidebar-menu {
-    background-color: var(--color-background);
     color: var(--color-menu);
     font-size: 2.5rem;
     font-weight: 500;
@@ -153,7 +154,7 @@ li {
     position: relative;
     top: 0;
     left: 0;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease;
 }
 
 .sidebar-menu li {
