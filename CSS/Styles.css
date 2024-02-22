@@ -135,7 +135,7 @@ a {
         color: var(--color-primary);
     }
 
-    .sidebar-menu {
+    .sub-menu-mobile {
         display: none;
     }
 }
@@ -150,7 +150,7 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.sidebar-menu {
+.sub-menu-mobile {
     color: var(--color-menu);
     font-size: 2.5rem;
     font-weight: 500;
@@ -163,7 +163,7 @@ a {
     transition: transform 0.5s ease-in-out, background-color 0.5s ease;
 }
 
-.sidebar-menu a {
+.sub-menu-mobile a {
     color: var(--color-menu);
     padding: 0 2rem 2rem 4.5rem;
     text-align: left;
@@ -171,21 +171,21 @@ a {
     justify-content: space-between;
 }
 
-.sidebar-menu a:hover {
+.sub-menu-mobile a:hover {
     color: var(--color-accent);
 }
 
-.sidebar-menu a span {
+.sub-menu-mobile a span {
     font-size: 2rem;
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
 
-.sidebar-menu a:hover span {
+.sub-menu-mobile a:hover span {
     opacity: .7;
 }
 
-.sidebar-menu .exit {
+.sub-menu-mobile .exit {
     font-size: 18px;
     position: absolute;
     top: 24px;

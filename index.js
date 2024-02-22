@@ -1,6 +1,6 @@
 // mobile nav menu button 
 let menuBtn = document.querySelector('#menu-btn');
-let sidebarMenu = document.querySelector('.sidebar-menu');
+let sidebarMenu = document.querySelector('.sub-menu-mobile');
 
 function sidebarVisible() {
     sidebarMenu.classList.toggle('hidden');
