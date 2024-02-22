@@ -25,7 +25,6 @@ menuBtn.addEventListener('click', function() {
     nav.style.height = (nav.style.height === '48px')? '100vh' : '48px';
 
     if (nav.style.height === '100vh') {
-
         subMenu.classList.remove('hidden');
     } else {
         subMenu.classList.add('hidden');
