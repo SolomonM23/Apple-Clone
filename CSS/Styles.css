@@ -49,21 +49,26 @@ a {
 }
 
 .navbar {
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #000;
     backdrop-filter: blur(10px);
     color: var(--color-primary);
-    display: flex;
     height: 48px;
-    justify-content: space-between;
-    left: 0;
-    padding: 20px;
     position: fixed;
-    top: 0;
     width: 100vw;
     z-index: 1000;
     transition: transform 0.5s ease-in-out;
 }
+
+.nav-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 48px;
+    width: 100vw;
+}
+
 .navbar .logo, .navbar .nav-icons {
     opacity: 1;
 }
@@ -161,6 +166,11 @@ a {
     top: 0;
     left: 0;
     transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+}
+
+.sub-menu-mobile button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-menu);
 }
 
 .sub-menu-mobile a {
