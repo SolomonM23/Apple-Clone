@@ -164,6 +164,7 @@ a {
     text-align: left;
     display: flex;
     justify-content: space-between;
+    transition: opacity ease-in-out 0.5s;
 }
 
 .sub-menu-mobile a:hover {
