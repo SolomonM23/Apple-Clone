@@ -38,6 +38,37 @@ li {
     cursor: pointer;
     list-style: none;
 }
+
+
+.fake-nav {
+    width: 100vw;
+    height: 5rem;
+    background-color: #2897FF;
+    transition: height 0.5s ease-in-out;
+    position: fixed;
+}
+
+.fake-content-overlay {
+    width: 8rem;
+    height: 8rem;
+    background-color: mediumvioletred;
+    padding-top: .5rem;
+    transition: opacity 0.5s ease-in-out 0.5s;
+    margin-top: 5rem;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.fake-hidden {
+    opacity: 0;
+}
+
+.fake-visible {
+    opacity: 1;
+}
+
 /* Header navbar */
 .header {
     position: relative;
@@ -45,7 +76,7 @@ li {
 
 .navbar {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     color: var(--color-primary);
     display: flex;
@@ -57,6 +88,7 @@ li {
     top: 0;
     width: 100vw;
     z-index: 1000;
+    transition: transform 0.5s ease-in-out;
 }
 .navbar .logo, .navbar .nav-icons {
     opacity: 1;
