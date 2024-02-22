@@ -39,34 +39,8 @@ li {
     list-style: none;
 }
 
-
-.fake-nav {
-    width: 100vw;
-    height: 5rem;
-    background-color: #2897FF;
-    transition: height 0.5s ease-in-out;
-    position: fixed;
-}
-
-.fake-content-overlay {
-    width: 8rem;
-    height: 8rem;
-    background-color: mediumvioletred;
-    padding-top: .5rem;
-    transition: opacity 0.5s ease-in-out 0.5s;
-    margin-top: 5rem;
-}
-button {
-    background-color: rgba(0, 0, 0, 0);
-    cursor: pointer;
-}
-
-.fake-hidden {
-    opacity: 0;
-}
-
-.fake-visible {
-    opacity: 1;
+a {
+    list-style: none;
 }
 
 /* Header navbar */
@@ -250,17 +224,17 @@ h2 {
     margin-top: 5rem; 
 }
 
-a {
+.content a {
     color: var(--color-links);
     font-size: 1.8rem;
     background: none;
 }
 
-a::after {
+.content a::after {
     content: " >";
 }
 
-a:hover {
+.content a:hover {
     text-decoration: underline;
 }
 
