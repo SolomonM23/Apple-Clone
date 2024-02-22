@@ -163,24 +163,25 @@ a {
     transition: transform 0.5s ease-in-out, background-color 0.5s ease;
 }
 
-.sidebar-menu li {
+.sidebar-menu a {
+    color: var(--color-menu);
     padding: 0 2rem 2rem 4.5rem;
     text-align: left;
     display: flex;
     justify-content: space-between;
 }
 
-.sidebar-menu li:hover {
+.sidebar-menu a:hover {
     color: var(--color-accent);
 }
 
-.sidebar-menu li span {
+.sidebar-menu a span {
     font-size: 2rem;
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
 
-.sidebar-menu li:hover span {
+.sidebar-menu a:hover span {
     opacity: .7;
 }
 
