@@ -181,12 +181,6 @@ a {
     opacity: .7;
 }
 
-.sub-menu-mobile .exit {
-    font-size: 18px;
-    position: absolute;
-    top: 24px;
-    right: 20px;
-}
 /* heros container for 3 hero sections */
 .heros {
     display: flex;
