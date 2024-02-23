@@ -23,22 +23,35 @@ let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a')
 
 menuBtn.addEventListener('click', function() {
-    nav.style.height = (nav.style.height === '48px')? '100vh' : '48px';
+    // Check the current height of the nav
+    const isExpanded = nav.style.height === '100vh';
 
-    if (nav.style.height === '100vh') {
-        subMenu.classList.remove('hidden');
+    // Toggle the height of the nav
+    nav.style.height = isExpanded ? '48px' : '100vh';
 
-        // Use setTimeout to reveal each anchor item one after the other
-        subMenuList.forEach((item, index) => {
-        setTimeout(() => {
-          item.style.opacity = 1;
-        }, index * 75); // Adjust the delay (in milliseconds) between items
-      });
-    } else {
+    // Toggle the icon based on the nav height
+    if (isExpanded) {
+        // If nav is collapsing, hide sub-menu items
         subMenu.classList.add('hidden');
-
         subMenuList.forEach(item => {
-            item.style.opacity = 0; // Hide the items when the menu is collapsed
-          });
+            item.style.opacity = 0;
+        });
+    } else {
+        // If nav is expanding, reveal sub-menu items with a delay
+        subMenu.classList.remove('hidden');
+        subMenuList.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.opacity = 1;
+            }, index * 75);
+        });
     }
-})
+
+    // Toggle the icon based on the nav height
+    if (isExpanded) {
+        menuBtn.classList.remove('fa-times');
+        menuBtn.classList.add('fa-bars');
+    } else {
+        menuBtn.classList.remove('fa-bars');
+        menuBtn.classList.add('fa-times');
+    }
+});
