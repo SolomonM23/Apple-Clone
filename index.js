@@ -2,7 +2,6 @@ let menuBtn = document.querySelector('#menu-btn');
 let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
-let navIcons = document.querySelector('.nav-icons-hide');
 
 // Toggle the height of the nav and perform other actions
 menuBtn.addEventListener('click', function() {
@@ -44,9 +43,9 @@ menuBtn.addEventListener('click', function() {
     }
 
     // Hide/show nav buttons and logo when nav expanded/collapsed
-    if (!isExpanded) {
-        navIcons.classList.add('invisible');
-    } else {
-        navIcons.classList.remove('invisible');
-    }
+    let navIcons = document.querySelectorAll('.nav-icons-hide');
+
+    navIcons.forEach(element => {
+        element.classList.toggle('invisible');
+    });
 });
