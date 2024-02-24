@@ -36,4 +36,14 @@ menuBtn.addEventListener('click', function() {
         menuBtn.classList.remove('fa-bars');
         menuBtn.classList.add('fa-times');
     }
+
+        // Set the background color based on isExpanded
+        nav.style.backgroundColor = isExpanded ? '/* Your original background color */' : '/* Your desired background color when expanded */';
+
+        // Toggle the expanded class based on isExpanded
+        if (isExpanded) {
+            nav.classList.remove('expanded');
+        } else {
+            nav.classList.add('expanded');
+        }
 });
