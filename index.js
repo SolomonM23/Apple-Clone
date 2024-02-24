@@ -10,60 +10,59 @@ const isExpanded = nav.style.height === '100vh';
 
 // Toggle the height of the nav
 menuBtn.addEventListener('click', function() {
-    // Check the current height of the nav
-
     nav.style.height = isExpanded ? '48px' : '100vh';
-
-
-    // //Hide buttons when menu expanded
-    // if (isExpanded) {
-    //     logo.classList.add('invisible');
-    //     searchBtn.classList.add('invisible');
-    //     cartBtn.classList.add('invisible');
-    // } else {
-    //     logo.classList.remove('invisible');
-    //     searchBtn.classList.remove('invisible');
-    //     cartBtn.classList.remove('invisible');
-    // }
 });
 
 // Reveal sub menu when nav height is expanded
 menuBtn.addEventListener('click', function(){
         
-        if (isExpanded) {
-            // If nav is collapsing, hide sub-menu items
-            subMenu.classList.add('hidden');
-            subMenuList.forEach(item => {
-                item.style.opacity = 0;
-            });
-        } else {
-            // If nav is expanding, reveal sub-menu items with a delay
-            subMenu.classList.remove('hidden');
-            subMenuList.forEach((item, index) => {
-                setTimeout(() => {
-                    item.style.opacity = 1;
-                }, index * 75);
-            });
-        }
+if (isExpanded) {
+    // If nav is collapsing, hide sub-menu items
+    subMenu.classList.add('hidden');
+    subMenuList.forEach(item => {
+        item.style.opacity = 0;
+    });
+} else {
+    // If nav is expanding, reveal sub-menu items with a delay
+    subMenu.classList.remove('hidden');
+    subMenuList.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = 1;
+        }, index * 75);
+    });
+}
 });
 
 // Change the menu button if nav height is expanded
 menuBtn.addEventListener('click', function() {
         
-        if (isExpanded) {
-            menuBtn.classList.remove('fa-times');
-            menuBtn.classList.add('fa-bars');
-        } else {
-            menuBtn.classList.remove('fa-bars');
-            menuBtn.classList.add('fa-times');
-        }
+if (isExpanded) {
+    menuBtn.classList.remove('fa-times');
+    menuBtn.classList.add('fa-bars');
+} else {
+    menuBtn.classList.remove('fa-bars');
+    menuBtn.classList.add('fa-times');
+}
 });
 
 // Set the background color based on isExpanded
 menuBtn.addEventListener('click', function() {
-        if (isExpanded) {
-            nav.classList.remove('expanded');
-        } else {
-            nav.classList.add('expanded');
-        }
+    if (isExpanded) {
+        nav.classList.remove('expanded');
+    } else {
+        nav.classList.add('expanded');
+    }
+});
+
+//Hide nav buttons and logo when nav expanded
+menuBtn.addEventListener('click', function() {
+if (isExpanded) {
+    logo.classList.add('invisible');
+    searchBtn.classList.add('invisible');
+    cartBtn.classList.add('invisible');
+} else {
+    logo.classList.remove('invisible');
+    searchBtn.classList.remove('invisible');
+    cartBtn.classList.remove('invisible');
+}
 });
