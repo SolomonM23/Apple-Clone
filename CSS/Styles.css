@@ -102,6 +102,10 @@ a {
     display: none;
 }
 
+.nav-icons-hide {
+    transition: opacity 0.3s ease-in-out;
+}
+
 .invisible {
     opacity: 0;
 }
