@@ -3,6 +3,9 @@ let menuBtn = document.querySelector('#menu-btn');
 let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a')
+// let logo = document.querySelector('.fa-apple');
+// let searchBtn = document.querySelector('.fa-magnifying-glass');
+// let cartBtn = document.querySelector('.fa-bag-shopping');
 
 menuBtn.addEventListener('click', function() {
     // Check the current height of the nav
@@ -37,13 +40,24 @@ menuBtn.addEventListener('click', function() {
         menuBtn.classList.add('fa-times');
     }
 
-        // Set the background color based on isExpanded
-        nav.style.backgroundColor = isExpanded ? '/* Your original background color */' : '/* Your desired background color when expanded */';
+    // Set the background color based on isExpanded
+    nav.style.backgroundColor = isExpanded ? '/* Your original background color */' : '/* Your desired background color when expanded */';
 
-        // Toggle the expanded class based on isExpanded
-        if (isExpanded) {
-            nav.classList.remove('expanded');
-        } else {
-            nav.classList.add('expanded');
-        }
+    // Toggle the expanded class based on isExpanded
+    if (isExpanded) {
+        nav.classList.remove('expanded');
+    } else {
+        nav.classList.add('expanded');
+    }
+
+    // //Hide buttons when menu expanded
+    // if (isExpanded) {
+    //     logo.classList.add('invisible');
+    //     searchBtn.classList.add('invisible');
+    //     cartBtn.classList.add('invisible');
+    // } else {
+    //     logo.classList.remove('invisible');
+    //     searchBtn.classList.remove('invisible');
+    //     cartBtn.classList.remove('invisible');
+    // }
 });
