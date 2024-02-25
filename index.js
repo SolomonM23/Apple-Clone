@@ -8,6 +8,16 @@ menuBtn.addEventListener('click', function() {
  // Calculate isExpanded inside the event listener
     const isExpanded = nav.style.height === '100vh';
 
+    // Get the current viewport width
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    // Check if the viewport width is 735px or higher
+    if (viewportWidth >= 735) {
+        // Close the dropdown if it's open
+        closeSubMenu();
+        return; // Don't proceed with toggling
+    }
+    
     // Toggle the height of the nav
     nav.style.height = isExpanded ? '48px' : '100vh';
 
@@ -49,3 +59,34 @@ menuBtn.addEventListener('click', function() {
         element.classList.toggle('invisible');
     });
 });
+
+// Function to close the dropdown
+function closeSubMenu() {
+    nav.style.height = '48px';
+    subMenu.classList.add('hidden');
+    subMenuList.forEach(item => {
+        item.style.opacity = 0;
+    });
+
+    menuBtn.classList.remove('fa-times');
+    menuBtn.classList.add('fa-bars');
+
+    nav.classList.remove('expanded');
+
+    let navIcons = document.querySelectorAll('.nav-icons-hide');
+    navIcons.forEach(element => {
+        element.classList.remove('invisible');
+    });
+}
+
+// Event listener for mobile menu to auto close when vw reaches 735px
+window.addEventListener('resize', function () {
+    // Get the current viewport width
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  
+    // Check if the viewport width is 735px or higher
+    if (viewportWidth >= 735) {
+      // Close the dropdown if it's open
+      closeSubMenu();
+    }
+  });
