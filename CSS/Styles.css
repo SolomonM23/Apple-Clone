@@ -113,6 +113,9 @@ a {
 @media screen and (min-width: 834px) {
     .navbar {
         height: 44px;
+    }
+    
+    .nav-icons-container {
         justify-content: center;
     }
     
