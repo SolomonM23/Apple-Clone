@@ -3,7 +3,7 @@ let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
 
-// Toggle the height of the nav and perform other actions
+//Show/Hide SubMenu
 menuBtn.addEventListener('click', function() {
  // Calculate isExpanded inside the event listener
     const isExpanded = nav.style.height === '100vh';
@@ -60,7 +60,7 @@ menuBtn.addEventListener('click', function() {
     });
 });
 
-// Function to close the dropdown
+// Function to close the SubMenu
 function closeSubMenu() {
     nav.style.height = '48px';
     subMenu.classList.add('hidden');
@@ -79,7 +79,7 @@ function closeSubMenu() {
     });
 }
 
-// Event listener for mobile menu to auto close when vw reaches 735px
+// Event listener to auto close SubMenu when vw reaches 735px
 window.addEventListener('resize', function () {
     // Get the current viewport width
     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
