@@ -190,7 +190,7 @@ a {
     opacity: .7;
 }
 
-.sub-menu-mobile .hide-left {
+.sub-menu-mobile-hide-left {
     position: absolute;
     top: 0;
     left: 0;
@@ -198,7 +198,7 @@ a {
     transition: transform 0.5s ease-in-out;
 }
 
-.sub-menu-mobile .show {
+.sub-menu-mobile-show {
     transform: translateX(0);
 }
 
@@ -206,13 +206,13 @@ a {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
 }
 
-.sub-menu-secondary .show {
+.sub-menu-secondary-show {
     transform: translateX(0);
+    z-index: 1050;
 }
 
 .sub-menu-secondary .content{

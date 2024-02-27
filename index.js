@@ -96,9 +96,9 @@ window.addEventListener('resize', function () {
 subMenuList.forEach(link => {
     link.addEventListener('click', function () {
       // Hide the menu-links div
-      subMenu.classList.add('.sub-menu-mobile .hide-left');
+      subMenu.classList.add('.sub-menu-mobile-hide-left');
   
       // Show the new-div
-      subMenuSecondary.classList.add('.sub-menu-secondary .show');
+      subMenuSecondary.classList.add('.sub-menu-secondary-show');
     });
 });
