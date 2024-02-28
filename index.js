@@ -92,20 +92,15 @@ window.addEventListener('resize', function () {
     }
 });
 
-// Add an event listener to each Submenu link
-// subMenuList.forEach(link => {
-//     link.addEventListener('click', function () {
-//       // Hide the menu-links div
-//       subMenu.classList.add('.sub-menu-mobile-hide-left');
-  
-//       // Show the new-div
-//       subMenuSecondary.classList.add('.sub-menu-secondary-show');
-//     });
-// });
-
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let menuStore = document.getElementById('store');
 
 menuStore.addEventListener('click', function() {
-    subMenuSecondary.classList.toggle('sub-menu-secondary-show');
+    subMenu.classList.add('sub-menu-mobile-hide-left');
+})
+
+let secondaryClick = document.querySelector('.sub-menu-secondary .content');
+
+secondaryClick.addEventListener('click', function() {
+    subMenu.classList.remove('sub-menu-mobile-hide-left');
 })
