@@ -157,7 +157,7 @@ a {
     display: none;
 }
 
-.sub-menu-mobile, .sub-menu-secondary {
+.sub-menu-mobile {
     color: var(--color-menu);
     font-size: 2.5rem;
     font-weight: 500;
@@ -203,12 +203,15 @@ a {
 }
 
 .sub-menu-secondary {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    background-color: purple;
+    width: 100vw;
+    height: 100vh;
+    top: 50vh;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
-}
+} 
 
 .sub-menu-secondary-show {
     transform: translateX(0);

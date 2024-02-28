@@ -2,7 +2,7 @@ let menuBtn = document.querySelector('#menu-btn');
 let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
-let subMenuSecondary = document.querySelector('sub-menu-secondary');
+
 
 //Show/Hide SubMenu
 menuBtn.addEventListener('click', function() {
@@ -93,12 +93,19 @@ window.addEventListener('resize', function () {
 });
 
 // Add an event listener to each Submenu link
-subMenuList.forEach(link => {
-    link.addEventListener('click', function () {
-      // Hide the menu-links div
-      subMenu.classList.add('.sub-menu-mobile-hide-left');
+// subMenuList.forEach(link => {
+//     link.addEventListener('click', function () {
+//       // Hide the menu-links div
+//       subMenu.classList.add('.sub-menu-mobile-hide-left');
   
-      // Show the new-div
-      subMenuSecondary.classList.add('.sub-menu-secondary-show');
-    });
-});
+//       // Show the new-div
+//       subMenuSecondary.classList.add('.sub-menu-secondary-show');
+//     });
+// });
+
+let subMenuSecondary = document.querySelector('.sub-menu-secondary');
+let menuStore = document.getElementById('store');
+
+menuStore.addEventListener('click', function() {
+    subMenuSecondary.classList.toggle('sub-menu-secondary-show');
+})
