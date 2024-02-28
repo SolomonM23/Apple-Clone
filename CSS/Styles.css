@@ -161,9 +161,8 @@ a {
     color: var(--color-menu);
     font-size: 2.5rem;
     font-weight: 500;
-    height: 100vh;
+    height: calc(100vh - 48px);
     width: 100vw;
-    padding-top: 6rem;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
@@ -192,9 +191,6 @@ a {
 }
 
 .sub-menu-mobile-hide-left {
-    position: absolute;
-    top: 0;
-    left: 0;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
 }
@@ -207,8 +203,8 @@ a {
     position: absolute;
     background-color: purple;
     width: 100vw;
-    height: 100vh;
-    top: 50vh;
+    height: calc(100vh - 48px);
+    top: 0;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
