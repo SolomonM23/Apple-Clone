@@ -99,12 +99,13 @@ window.addEventListener('resize', function () {
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let menuStore = document.getElementById('store');
 
+//test logic for first sub link to open secondary menu div and hide subMenu
 menuStore.addEventListener('click', function() {
     subMenu.classList.add('sub-menu-mobile-hide-left');
 })
 
-let secondaryClick = document.querySelector('.sub-menu-secondary .content');
+let subMenuBackBtn = document.querySelector('.sub-menu-secondary .back-btn');
 
-secondaryClick.addEventListener('click', function() {
+subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
 })
