@@ -59,6 +59,10 @@ menuBtn.addEventListener('click', function() {
     navIcons.forEach(element => {
         element.classList.toggle('invisible');
     });
+
+    if (subMenu.classList.contains('sub-menu-mobile-hide-left')){
+        subMenu.classList.remove('sub-menu-mobile-hide-left');
+    }
 });
 
 // Function to close the SubMenu

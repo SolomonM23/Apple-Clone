@@ -163,6 +163,7 @@ a {
     font-weight: 500;
     height: calc(100vh - 48px);
     width: 100vw;
+    padding-top: 1.5rem;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
