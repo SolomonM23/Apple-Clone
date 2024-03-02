@@ -104,7 +104,7 @@ menuStore.addEventListener('click', function() {
     subMenu.classList.add('sub-menu-mobile-hide-left');
 })
 
-let subMenuBackBtn = document.querySelector('.sub-menu-secondary .back-btn');
+let subMenuBackBtn = document.querySelector('.logo a');
 
 subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
