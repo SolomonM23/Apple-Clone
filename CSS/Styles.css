@@ -231,16 +231,21 @@ a {
     margin-top: 1.5rem;
 }
 
-.sub-menu-secondary .content a {
-    color: var(--color-menu);
-    text-decoration: none;
+.sub-menu-secondary .content .primary-list,
+.sub-menu-secondary .content .secondary-list {
+    border: 3px solid red;
+    padding-bottom: 3rem;
 }
 
-.sub-menu-secondary .content .primary-list a {
-    font-size: 2.5rem;
-    font-weight: 500;
+.sub-menu-secondary .content .secondary-list-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.sub-menu-secondary .content .secondary-list {
+    width: 25rem;
+    font-size: 1.6rem;
+}
 
 /* heros container for 3 hero sections */
 .heros {
