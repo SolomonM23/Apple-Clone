@@ -221,13 +221,13 @@ a {
 
 .sub-menu-secondary-show {
     transform: translateX(0);
-    /* z-index: 1050; */
 }
 
 .sub-menu-secondary .content{
     background-color: pink;
     width: auto;
     height: auto;
+    margin-top: 1.5rem;
 }
 
 /* heros container for 3 hero sections */
