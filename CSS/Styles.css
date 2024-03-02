@@ -208,6 +208,9 @@ a {
     right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 } 
 
 .sub-menu-secondary .back-btn {
@@ -223,8 +226,8 @@ a {
 
 .sub-menu-secondary .content{
     background-color: pink;
-    width: 5rem;
-    height: 10rem;
+    width: auto;
+    height: auto;
 }
 
 /* heros container for 3 hero sections */
