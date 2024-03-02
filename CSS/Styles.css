@@ -200,6 +200,7 @@ a {
     transform: translateX(0);
 }
 
+/* secondary sub menu */
 .sub-menu-secondary {
     position: absolute;
     width: 100vw;
@@ -224,11 +225,22 @@ a {
 }
 
 .sub-menu-secondary .content{
-    background-color: pink;
+    border: 5px solid pink;
     width: auto;
     height: auto;
     margin-top: 1.5rem;
 }
+
+.sub-menu-secondary .content a {
+    color: var(--color-menu);
+    text-decoration: none;
+}
+
+.sub-menu-secondary .content .primary-list a {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
 
 /* heros container for 3 hero sections */
 .heros {
@@ -260,25 +272,25 @@ h2 {
     margin-top: 0;
 }
 
-.content {
+.heros .content, .grid .content {
     margin-top: 5rem; 
 }
 
-.content a {
+.heros .content a, .grid .content a {
     color: var(--color-links);
     font-size: 1.8rem;
     background: none;
 }
 
-.content a::after {
+.heros .content a::after, .grid .content a::after {
     content: " >";
 }
 
-.content a:hover {
+.heros .content a:hover, .grid .content a:hover {
     text-decoration: underline;
 }
 
-.content a:nth-child(2) {
+.heros .content a:nth-child(2) {
     margin-left: 2rem;
 }
 
