@@ -247,13 +247,19 @@ a {
     flex-wrap: wrap;
 }
 
-.sub-menu-secondary .content .secondary-list-container a {
+.sub-menu-secondary .content .secondary-list-container a,
+.sub-menu-secondary .content .primary-list .extended a {
     padding-bottom: 1rem;
 }
 
-.sub-menu-secondary .content .secondary-list {
+.sub-menu-secondary .content .secondary-list,
+.sub-menu-secondary .content .primary-list .extended {
     width: 25rem;
     font-size: 1.6rem;
+}
+
+.sub-menu-secondary .content .primary-list .extended {
+    padding-top: 1rem;
 }
 
 .sub-menu-secondary .content .secondary-list > a:first-child {

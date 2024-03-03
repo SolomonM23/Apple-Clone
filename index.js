@@ -105,15 +105,15 @@ window.addEventListener('resize', function () {
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let menuStore = document.getElementById('store');
 
-//test logic for first sub link to open secondary menu div and hide subMenu
+//show sub menu content on store link only and shows back button
 menuStore.addEventListener('click', function() {
     subMenu.classList.add('sub-menu-mobile-hide-left');
     subMenuBackBtn.classList.add('back-btn-visible');
-
 })
 
 let subMenuBackBtn = document.querySelector('#back-btn');
 
+//back button 
 subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
     subMenuBackBtn.classList.remove('back-btn-visible');
