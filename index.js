@@ -112,7 +112,7 @@ subMenuList.forEach(link => {
         // Get the data-content value from the clicked link
         let contentId = link.getAttribute('data-content');
 
-        // Toggle the class on the sub-menu-secondary/show back btn
+        // Show the sub-menu-secondary/show back btn
         subMenu.classList.add('sub-menu-mobile-hide-left');
         subMenuBackBtn.classList.add('back-btn-visible');
 
