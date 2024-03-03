@@ -102,7 +102,6 @@ window.addEventListener('resize', function () {
     }
 });
 
-let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let menuStore = document.getElementById('store');
 let subMenuBackBtn = document.querySelector('#back-btn');
 
