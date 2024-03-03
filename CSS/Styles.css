@@ -217,7 +217,12 @@ a {
 
 .back-btn {
     position: absolute;
-    
+    left: 20px;
+    visibility: hidden;
+}
+
+.back-btn-visible {
+    visibility: visible;
 }
 
 .sub-menu-secondary-show {

@@ -60,8 +60,14 @@ menuBtn.addEventListener('click', function() {
         element.classList.toggle('invisible');
     });
 
+    //Hide sub menu when mobile menu closes
     if (subMenu.classList.contains('sub-menu-mobile-hide-left')){
         subMenu.classList.remove('sub-menu-mobile-hide-left');
+    }
+
+    //Hide back button when sub menu closes
+    if (subMenuBackBtn.classList.contains('back-btn-visible')) {
+        subMenuBackBtn.classList.remove('back-btn-visible');
     }
 });
 
@@ -102,10 +108,13 @@ let menuStore = document.getElementById('store');
 //test logic for first sub link to open secondary menu div and hide subMenu
 menuStore.addEventListener('click', function() {
     subMenu.classList.add('sub-menu-mobile-hide-left');
+    subMenuBackBtn.classList.add('back-btn-visible');
+
 })
 
-let subMenuBackBtn = document.querySelector('.logo a');
+let subMenuBackBtn = document.querySelector('#back-btn');
 
 subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
+    subMenuBackBtn.classList.remove('back-btn-visible');
 })
