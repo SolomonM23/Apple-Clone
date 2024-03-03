@@ -104,14 +104,27 @@ window.addEventListener('resize', function () {
 
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let menuStore = document.getElementById('store');
-
-//show sub menu content on store link only and shows back button
-menuStore.addEventListener('click', function() {
-    subMenu.classList.add('sub-menu-mobile-hide-left');
-    subMenuBackBtn.classList.add('back-btn-visible');
-})
-
 let subMenuBackBtn = document.querySelector('#back-btn');
+
+//Hide/show mobile menu content
+subMenuList.forEach(link => {
+    link.addEventListener('click', function() {
+        // Get the data-content value from the clicked link
+        let contentId = link.getAttribute('data-content');
+
+        // Toggle the class on the sub-menu-secondary/show back btn
+        subMenu.classList.add('sub-menu-mobile-hide-left');
+        subMenuBackBtn.classList.add('back-btn-visible');
+
+        // Hide all content divs
+        document.querySelectorAll('.sub-menu-secondary .content').forEach(content => {
+            content.style.display = 'none';
+        });
+
+        // Show the content div associated with the clicked link
+        document.getElementById(contentId + '-content').style.display = 'block';
+    })
+})
 
 //back button 
 subMenuBackBtn.addEventListener('click', function() {
