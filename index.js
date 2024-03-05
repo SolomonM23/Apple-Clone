@@ -103,6 +103,7 @@ window.addEventListener('resize', function () {
 });
 
 let subMenuBackBtn = document.querySelector('#back-btn');
+let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 
 //Hide/show mobile menu content
 subMenuList.forEach(link => {
@@ -112,6 +113,7 @@ subMenuList.forEach(link => {
 
         // Show the sub-menu-secondary/show back btn
         subMenu.classList.add('sub-menu-mobile-hide-left');
+        subMenuSecondary.scrollTop = 0; //content scroll set back to top
         subMenuBackBtn.classList.add('back-btn-visible');
 
         // Hide all content divs
