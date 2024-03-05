@@ -102,7 +102,6 @@ window.addEventListener('resize', function () {
     }
 });
 
-let menuStore = document.getElementById('store');
 let subMenuBackBtn = document.querySelector('#back-btn');
 
 //Hide/show mobile menu content
