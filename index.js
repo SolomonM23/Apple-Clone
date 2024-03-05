@@ -2,7 +2,8 @@ let menuBtn = document.querySelector('#menu-btn');
 let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
-
+let subMenuBackBtn = document.querySelector('#back-btn');
+let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 
 //Show/Hide SubMenu
 menuBtn.addEventListener('click', function() {
@@ -101,9 +102,6 @@ window.addEventListener('resize', function () {
       closeSubMenu();
     }
 });
-
-let subMenuBackBtn = document.querySelector('#back-btn');
-let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 
 //Hide/show mobile menu content
 subMenuList.forEach(link => {
