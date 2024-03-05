@@ -254,7 +254,7 @@ a {
 
 .sub-menu-secondary .content .secondary-list,
 .sub-menu-secondary .content .primary-list .extended {
-    width: 25rem;
+    width: auto;
     font-size: 1.6rem;
 }
 
