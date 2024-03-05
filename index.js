@@ -5,7 +5,7 @@ let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
 let subMenuBackBtn = document.querySelector('#back-btn');
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 
-//Show/Hide SubMenu
+//Show/Hide mobile SubMenu
 menuBtn.addEventListener('click', function() {
  // Calculate isExpanded inside the event listener
     const isExpanded = nav.style.height === '100vh';
@@ -72,7 +72,7 @@ menuBtn.addEventListener('click', function() {
     }
 });
 
-// Function to close the SubMenu
+// Function to close mobile the SubMenu
 function closeSubMenu() {
     nav.style.height = '48px';
     subMenu.classList.add('hidden');
@@ -91,7 +91,7 @@ function closeSubMenu() {
     });
 }
 
-// Event listener to auto close SubMenu when vw reaches 735px
+// Event listener to auto close mobile SubMenu when vw reaches 735px
 window.addEventListener('resize', function () {
     // Get the current viewport width
     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
