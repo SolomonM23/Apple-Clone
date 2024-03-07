@@ -152,6 +152,20 @@ a {
     }
 }
 
+/* mobile search section */
+.search-mobile {
+    width: 100;
+    height: 100%;
+}
+
+.search-mobile .search-box {
+
+}
+
+.search-mobile .quick-links {
+    
+}
+
 /* Submenu section */
 .hidden {
     display: none;
