@@ -177,6 +177,7 @@ a {
     font-size: 3rem;
     text-align: left;
     padding: 0 1rem;
+    color: var(--color-menu);
     background-color: transparent;
     caret-color: var(--color-menu);
 }
@@ -205,6 +206,10 @@ a {
     font-weight: 500;
     color: var(--color-footer);
     margin-bottom: 1.5rem;
+}
+
+.search-mobile .arrow-link a {
+    color: var(--color-menu);
 }
 
 .search-mobile .arrow-link span {
