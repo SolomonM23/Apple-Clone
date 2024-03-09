@@ -156,8 +156,19 @@ a {
 .search-mobile {
     width: 100%;
     height: 100vh;
+    color: var(--color-footer);
     padding: 4.5rem;
     border: 3px solid red;
+}
+
+.search-mobile a {
+    font-size: 1.6rem;
+    color: var(--color-footer);
+    margin-bottom: 1.5rem;
+}
+
+.search-mobile span {
+    padding-right: 1.5rem;
 }
 
 .search-mobile .search-box {
@@ -165,6 +176,25 @@ a {
     width: 100%;
     border: 3px solid blue;
     font-size: 3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.search-mobile .search-box input {
+    width: 100%;
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.search-box .fa-magnifying-glass {
+    font-size: 2.3rem;
+}
+
+.search-box .fa-circle-xmark {
+    font-size: 1.7rem;
 }
 
 .search-mobile .quick-links {
