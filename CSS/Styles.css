@@ -205,9 +205,6 @@ a {
     align-items: start;
 }
 
-.search-mobile .quick-links:first-child {
-    font-weight: 400;
-}
 
 /* Submenu section */
 .hidden {
