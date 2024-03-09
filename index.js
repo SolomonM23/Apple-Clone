@@ -129,3 +129,15 @@ subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
     subMenuBackBtn.classList.remove('back-btn-visible');
 })
+
+let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
+
+mobileSearchBtn.addEventListener('click', function() {
+    // Calculate isExpanded inside the event listener
+    const isExpanded = nav.style.height === '100vh';
+
+    // Toggle the height of the nav
+    nav.style.height = isExpanded ? '48px' : '100vh';  
+    
+    
+})
