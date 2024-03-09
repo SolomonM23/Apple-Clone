@@ -139,5 +139,30 @@ mobileSearchBtn.addEventListener('click', function() {
     // Toggle the height of the nav
     nav.style.height = isExpanded ? '48px' : '100vh';  
     
-    
+    // Reveal/hide content
+    let searchContent = document.querySelector('.search-mobile');
+    searchContent.classList.toggle('hidden');
+
+     // Change the menu button icon
+    if (isExpanded) {
+        menuBtn.classList.remove('fa-times');
+        menuBtn.classList.add('fa-bars');
+    } else {
+        menuBtn.classList.remove('fa-bars');
+        menuBtn.classList.add('fa-times');
+    }
+
+    // Set the background color based on isExpanded
+    if (isExpanded) {
+        nav.classList.remove('expanded');
+    } else {
+        nav.classList.add('expanded');
+    }
+
+    // Hide/show nav buttons and logo when nav expanded/collapsed
+    let navIcons = document.querySelectorAll('.nav-icons-hide');
+
+    navIcons.forEach(element => {
+        element.classList.toggle('invisible');
+    });
 })
