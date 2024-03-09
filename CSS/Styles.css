@@ -161,14 +161,16 @@ a {
     border: 3px solid red;
 }
 
-.search-mobile a {
+.search-mobile li {
     font-size: 1.6rem;
+    font-weight: 500;
     color: var(--color-footer);
     margin-bottom: 1.5rem;
 }
 
-.search-mobile span {
+.search-mobile li span {
     padding-right: 1.5rem;
+    color: var(--color-footer);
 }
 
 .search-mobile .search-box {
@@ -201,6 +203,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.search-mobile .quick-links:first-child {
+    font-weight: 400;
 }
 
 /* Submenu section */
