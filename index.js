@@ -4,6 +4,8 @@ let subMenu = document.querySelector('.sub-menu-mobile');
 let subMenuList = document.querySelectorAll('.sub-menu-mobile a');
 let subMenuBackBtn = document.querySelector('#back-btn');
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
+let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
+let searchContent = document.querySelector('.search-mobile');
 
 //Show/Hide mobile SubMenu
 menuBtn.addEventListener('click', function() {
@@ -60,12 +62,18 @@ menuBtn.addEventListener('click', function() {
     if (subMenuBackBtn.classList.contains('back-btn-visible')) {
         subMenuBackBtn.classList.remove('back-btn-visible');
     }
+
+    //close search content
+    if (!searchContent.classList.contains('hidden')) {
+        closeSubMenu();
+    }
 });
 
 // Function to close mobile the SubMenu
 function closeSubMenu() {
     nav.style.height = '48px';
     subMenu.classList.add('hidden');
+    searchContent.classList.add('hidden');
     subMenuList.forEach(item => {
         item.style.opacity = 0;
     });
@@ -120,8 +128,6 @@ subMenuBackBtn.addEventListener('click', function() {
     subMenuBackBtn.classList.remove('back-btn-visible');
 })
 
-let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
-
 //Show/hide mobile search content
 mobileSearchBtn.addEventListener('click', function() {
     // Calculate isExpanded inside the event listener
@@ -131,8 +137,7 @@ mobileSearchBtn.addEventListener('click', function() {
     nav.style.height = isExpanded ? '48px' : '100vh';  
     
     // Reveal/hide content
-    let searchContent = document.querySelector('.search-mobile');
-    searchContent.classList.toggle('hidden');
+    searchContent.classList.remove('hidden');
 
      // Change the menu button icon
     if (isExpanded) {
