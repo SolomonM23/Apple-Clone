@@ -168,6 +168,8 @@ a {
     justify-content: start;
     align-items: center;
     margin-bottom: 5rem;
+    position: relative;
+    border: 2px solid red;
 }
 
 .search-mobile .search-box input {
@@ -186,6 +188,11 @@ a {
 
 .search-box .fa-circle-xmark {
     font-size: 1.7rem;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
 }
 
 .search-mobile .quick-links {

@@ -6,6 +6,8 @@ let subMenuBackBtn = document.querySelector('#back-btn');
 let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
 let searchContent = document.querySelector('.search-mobile');
+let searchInput = document.querySelector('.search-box input');
+let clearInputBtn = document.querySelector('.fa-circle-xmark');
 
 //Show/Hide mobile SubMenu
 menuBtn.addEventListener('click', function() {
@@ -161,4 +163,13 @@ mobileSearchBtn.addEventListener('click', function() {
     navIcons.forEach(element => {
         element.classList.toggle('invisible');
     });
+})
+
+//search content input 
+searchInput.addEventListener('input', function() {
+    if (searchInput.value.trim() !== '') {
+        clearInputBtn.style.display = 'block'; // Show the clear icon
+    } else {
+        clearInputBtn.style.display = 'none'; // Hide the clear icon
+    }
 })
