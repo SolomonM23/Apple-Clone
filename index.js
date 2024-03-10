@@ -165,7 +165,7 @@ mobileSearchBtn.addEventListener('click', function() {
     });
 })
 
-//search content input 
+//Search content input 
 searchInput.addEventListener('input', function() {
     if (searchInput.value.trim() !== '') {
         clearInputBtn.style.display = 'block'; // Show the clear icon
@@ -173,3 +173,9 @@ searchInput.addEventListener('input', function() {
         clearInputBtn.style.display = 'none'; // Hide the clear icon
     }
 })
+
+//Empty search input
+clearInputBtn.addEventListener('click', function() {
+    searchInput.value = ''; // Clear the input
+    clearInputBtn.style.display = 'none'; // Hide the clear icon
+});
