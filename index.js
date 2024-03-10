@@ -9,16 +9,6 @@ let subMenuSecondary = document.querySelector('.sub-menu-secondary');
 menuBtn.addEventListener('click', function() {
  // Calculate isExpanded inside the event listener
     const isExpanded = nav.style.height === '100vh';
-
-    // Get the current viewport width
-    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-    // Check if the viewport width is 735px or higher
-    if (viewportWidth >= 735) {
-        // Close the dropdown if it's open
-        closeSubMenu();
-        return; // Don't proceed with toggling
-    }
     
     // Toggle the height of the nav
     nav.style.height = isExpanded ? '48px' : '100vh';
@@ -132,6 +122,7 @@ subMenuBackBtn.addEventListener('click', function() {
 
 let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
 
+//Show/hide mobile search content
 mobileSearchBtn.addEventListener('click', function() {
     // Calculate isExpanded inside the event listener
     const isExpanded = nav.style.height === '100vh';
