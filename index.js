@@ -139,9 +139,12 @@ mobileSearchBtn.addEventListener('click', function() {
     nav.style.height = isExpanded ? '48px' : '100vh';  
     
     // Reveal/hide content
+    // const elements = document.querySelectorAll('.reveal-element');
+
     searchContent.classList.remove('hidden');
 
-     // Change the menu button icon
+
+    // Change the menu button icon
     if (isExpanded) {
         menuBtn.classList.remove('fa-times');
         menuBtn.classList.add('fa-bars');
