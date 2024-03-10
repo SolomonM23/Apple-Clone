@@ -163,6 +163,9 @@ mobileSearchBtn.addEventListener('click', function() {
     navIcons.forEach(element => {
         element.classList.toggle('invisible');
     });
+
+    //Auto focus input when open
+    searchInput.focus();
 })
 
 //Search content input 
