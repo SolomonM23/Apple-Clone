@@ -161,7 +161,6 @@ a {
 }
 
 .search-mobile .reveal-element {
-    /* opacity: 0; */
     transition: opacity ease-in-out 0.5s;
 }
 
