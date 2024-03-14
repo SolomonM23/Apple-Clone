@@ -152,8 +152,9 @@ a {
     }
 }
 
-/* mobile search section */
-.search-mobile {
+/* mobile search and cart sections */
+.search-mobile,
+.cart-mobile {
     width: 100%;
     height: 100vh;
     color: var(--color-footer);
@@ -198,31 +199,40 @@ a {
     display: none;
 }
 
-.search-mobile .quick-links {
+.search-mobile .quick-links,
+.cart-mobile .quick-links {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.search-mobile .quick-links li:first-child {
+.search-mobile .quick-links li:first-child,
+.cart-mobile .quick-links li:first-child {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.search-mobile .arrow-link {
+.search-mobile .arrow-link,
+.cart-mobile .arrow-link {
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--color-footer);
     margin-bottom: 1.5rem;
 }
 
-.search-mobile .arrow-link a {
+.search-mobile .arrow-link a,
+.cart-mobile .arrow-link a {
     color: var(--color-menu);
 }
 
-.search-mobile .arrow-link span {
+.search-mobile .arrow-link span,
+.cart-mobile .arrow-link span {
     padding-right: 1.5rem;
     color: var(--color-footer);
+}
+
+.cart-mobile h2 {
+    font-size: 2.5rem;
 }
 
 /* Submenu section */
