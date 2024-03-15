@@ -8,6 +8,8 @@ let mobileSearchBtn = document.querySelector('.nav-icons .fa-magnifying-glass');
 let searchContent = document.querySelector('.search-mobile');
 let searchInput = document.querySelector('.search-box input');
 let clearInputBtn = document.querySelector('.fa-circle-xmark');
+let mobileCartBtn = document.querySelector('.fa-bag-shopping');
+let cartContent = document.querySelector('.cart-mobile');
 
 //Show/Hide mobile SubMenu
 menuBtn.addEventListener('click', function() {
@@ -180,3 +182,41 @@ clearInputBtn.addEventListener('click', function() {
     searchInput.value = ''; // Clear the input
     clearInputBtn.style.display = 'none'; // Hide the clear icon
 });
+
+//Show/hide mobile shopping cart
+mobileCartBtn.addEventListener('click', function() {
+    // Calculate isExpanded inside the event listener
+    const isExpanded = nav.style.height === '100vh';
+
+    // Toggle the height of the nav
+    nav.style.height = isExpanded ? '48px' : '100vh';  
+    
+    // Reveal/hide content
+    // const elements = document.querySelectorAll('.reveal-element');
+
+    cartContent.classList.remove('hidden');
+
+
+    // Change the menu button icon
+    if (isExpanded) {
+        menuBtn.classList.remove('fa-times');
+        menuBtn.classList.add('fa-bars');
+    } else {
+        menuBtn.classList.remove('fa-bars');
+        menuBtn.classList.add('fa-times');
+    }
+
+    // Set the background color based on isExpanded
+    if (isExpanded) {
+        nav.classList.remove('expanded');
+    } else {
+        nav.classList.add('expanded');
+    }
+
+    // Hide/show nav buttons and logo when nav expanded/collapsed
+    let navIcons = document.querySelectorAll('.nav-icons-hide');
+
+    navIcons.forEach(element => {
+        element.classList.toggle('invisible');
+    });
+})
