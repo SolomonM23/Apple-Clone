@@ -70,7 +70,6 @@ menuBtn.addEventListener('click', function() {
         closeSubMenu();
     }
 });
-
 // Function to close mobile the SubMenu
 function closeSubMenu() {
     nav.style.height = '48px';
@@ -90,7 +89,6 @@ function closeSubMenu() {
         element.classList.remove('invisible');
     });
 }
-
 // Event listener to auto close mobile SubMenu when vw reaches 735px
 window.addEventListener('resize', function () {
     // Get the current viewport width
@@ -123,7 +121,6 @@ subMenuList.forEach(link => {
         document.getElementById(contentId + '-content').style.display = 'block';
     })
 })
-
 //back button 
 subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
@@ -170,7 +167,6 @@ mobileSearchBtn.addEventListener('click', function() {
     //Auto focus input when open
     searchInput.focus();
 })
-
 //Search content input 
 searchInput.addEventListener('input', function() {
     if (searchInput.value.trim() !== '') {
@@ -179,7 +175,6 @@ searchInput.addEventListener('input', function() {
         clearInputBtn.style.display = 'none'; // Hide the clear icon
     }
 })
-
 //Empty search input
 clearInputBtn.addEventListener('click', function() {
     searchInput.value = ''; // Clear the input
