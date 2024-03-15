@@ -161,6 +161,17 @@ a {
     padding: 2rem 4.5rem 0 4.5rem;
 }
 
+.cart-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start; 
+}
+
+.cart-mobile p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
 .search-mobile .reveal-element {
     transition: opacity ease-in-out 0.5s;
 }
