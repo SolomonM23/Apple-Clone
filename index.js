@@ -71,12 +71,18 @@ menuBtn.addEventListener('click', function() {
     if (!searchContent.classList.contains('hidden')) {
         closeSubMenu();
     }
+    
+    //close cart content
+    if (!cartContent.classList.contains('hidden')) {
+        closeSubMenu();
+    }
 });
 // Function to close mobile the SubMenu
 function closeSubMenu() {
     nav.style.height = '48px';
     subMenu.classList.add('hidden');
     searchContent.classList.add('hidden');
+    cartContent.classList.add('hidden');
     subMenuList.forEach(item => {
         item.style.opacity = 0;
     });
