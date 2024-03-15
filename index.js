@@ -109,6 +109,7 @@ window.addEventListener('resize', function () {
     }
 });
 
+
 //Hide/show mobile menu content
 subMenuList.forEach(link => {
     link.addEventListener('click', function() {
@@ -134,6 +135,7 @@ subMenuBackBtn.addEventListener('click', function() {
     subMenu.classList.remove('sub-menu-mobile-hide-left');
     subMenuBackBtn.classList.remove('back-btn-visible');
 })
+
 
 //Show/hide mobile search content
 mobileSearchBtn.addEventListener('click', function() {
@@ -188,6 +190,7 @@ clearInputBtn.addEventListener('click', function() {
     searchInput.value = ''; // Clear the input
     clearInputBtn.style.display = 'none'; // Hide the clear icon
 });
+
 
 //Show/hide mobile shopping cart
 mobileCartBtn.addEventListener('click', function() {
