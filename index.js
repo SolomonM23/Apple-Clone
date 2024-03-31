@@ -1,3 +1,5 @@
+import 'normalize.css';
+
 let menuBtn = document.querySelector('#menu-btn');
 let nav = document.querySelector('.navbar');
 let subMenu = document.querySelector('.sub-menu-mobile');

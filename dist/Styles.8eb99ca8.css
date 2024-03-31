@@ -463,7 +463,7 @@ h2 {
 
 /* hero-1 container */
 .hero-1 {
-    background: url(../Images/hero-mobile.jpg);
+    background: url(/hero-mobile.683a138a.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -472,7 +472,7 @@ h2 {
 
 @media screen and (min-width: 735px){
     .hero-1 {
-        background: url(../Images/hero-desktop.jpg);
+        background: url(/hero-desktop.1b68c3c5.jpg);
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;
@@ -483,7 +483,7 @@ h2 {
 
 /* hero-2 container */
 .hero-2 {
-    background: url(../Images/iphones-mobile.jpg);
+    background: url(/iphones-mobile.def56c1d.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -500,7 +500,7 @@ h2 {
 
 @media screen and (min-width: 735px) {
     .hero-2 {
-        background: url(../Images/iphones-desktop.jpg);
+        background: url(/iphones-desktop.bd0388f2.jpg);
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;
@@ -515,7 +515,7 @@ h2 {
 
 /* hero-3 container */
 .hero-3 {
-    background: url(../Images/watch-mobile.jpg);
+    background: url(/watch-mobile.ee5a1ea3.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -529,7 +529,7 @@ h2 {
 /* tablet screen */
 @media screen and (min-width: 735px) {
     .hero-3 {
-        background: url(../Images/watch-desktop.jpg);
+        background: url(/watch-desktop.cac18b3d.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -584,7 +584,7 @@ h2 {
 
 /* grid space-1 WWDC23 & AirPods Pro on big screens */
 .space-1 {
-    background: url(../Images/wwdc-mobile.jpg);
+    background: url(/wwdc-mobile.26426838.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -605,7 +605,7 @@ h2 {
 
 /* grid space-2 Ipad*/
 .space-2 {
-    background: url(../Images/ipad-mobile.jpg);
+    background: url(/ipad-mobile.368a46a5.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -618,7 +618,7 @@ h2 {
 
 /* grid space-3 Macbook Pro*/
 .space-3 {
-    background: url(../Images/mackbook-desktop.jpg);
+    background: url(/mackbook-desktop.5cccd80c.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -635,7 +635,7 @@ h2 {
 
 /* grid space-4 HomePod*/
 .space-4 {
-    background: url(../Images/Homepod-desktop.jpg);
+    background: url(/Homepod-desktop.817d9ce0.jpg);
     background-size: 700px 600px;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -644,7 +644,7 @@ h2 {
 
 /* grid space-5 Music Classical & Fitness on big screens*/
 .space-5 {
-    background: url(../Images/Music-mobile.jpg);
+    background: url(/Music-mobile.fd6e0c3f.jpg);
     background-size: 734px 834px;
     background-repeat: no-repeat;
     background-position: center 55%;
@@ -664,7 +664,7 @@ h2 {
 
 /* grid space-6 Apple Card*/
 .space-6 {
-    background: url(../Images/card-mobile.jpg);
+    background: url(/card-mobile.93224ef0.jpg);
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: center;
@@ -685,7 +685,7 @@ h2 {
 
 @media screen and (min-width: 735px) {
     .space-1 {
-        background: url(../Images/Airpods-desktop.jpg);
+        background: url(/Airpods-desktop.745da0d9.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -711,7 +711,7 @@ h2 {
     }
 
     .space-5 {
-        background: url(../Images/Fitness-desktop.jpg);
+        background: url(/Fitness-desktop.04fc051b.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -733,3 +733,5 @@ h2 {
         display: block; /* Display on larger screens */
       }
 }
+
+/*# sourceMappingURL=/Styles.8eb99ca8.css.map */
